@@ -1,0 +1,24 @@
+.sw-cms-el-preview-manufacturer-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .sw-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .sw-cms-el-preview-manufacturer-slider--container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .sw-cms-el-preview-manufacturer-slider--item {
+            width: 30px;
+            height: 30px;
+            background-color: lightgrey;
+        }
+    }
+}
+

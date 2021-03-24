@@ -1,0 +1,9 @@
+{
+  "sw-cms": {
+    "elements": {
+       "manufacturerSliderElement": {
+        "label": "Manufacturer Slider"
+      }
+    }
+  }
+}

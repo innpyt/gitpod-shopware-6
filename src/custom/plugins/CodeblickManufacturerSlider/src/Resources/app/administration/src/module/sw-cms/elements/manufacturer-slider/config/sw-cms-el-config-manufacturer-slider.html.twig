@@ -1,0 +1,41 @@
+{% block sw_cms_element_manufacturer_slider_config %}
+<div class="sw-cms-el-manufacturer-slider-config">
+    <sw-text-field
+        v-model="element.config.heading.value"
+        class="manufacturer-slider-field0"
+        label="Heading"
+        placeholder="Your Heading"
+        @input="element.config.heading.value">
+    </sw-text-field>
+
+    <sw-entity-multi-select
+        label="Select Manufacturers"
+        entityName="product_manufacturer"
+        v-model="element.config.selectedManufacturers.value">
+    </sw-entity-multi-select>
+
+    <sw-switch-field 
+        label="Show Controls?" 
+        v-model="element.config.showControls.value">
+    </sw-switch-field>
+
+    <sw-switch-field 
+        label="Auto Rotate?" 
+        v-model="element.config.autoRotate.value">
+    </sw-switch-field>
+    
+    <template v-if="element.config.autoRotate.value == true">
+        <sw-number-field 
+            label="Speed, ms"
+            placeholder="3000"
+            numberType="int" 
+            :step="500" 
+            :min="1000" 
+            :max="10000" 
+            v-model="element.config.sliderSpeed.value"
+            :digits="0" 
+            :allowEmpty="false">
+        </sw-number-field>
+    </template>
+</div>
+{% endblock %}

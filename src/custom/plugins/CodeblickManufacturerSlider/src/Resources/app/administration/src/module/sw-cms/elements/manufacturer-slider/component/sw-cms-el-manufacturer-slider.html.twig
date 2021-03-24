@@ -1,0 +1,21 @@
+{% block sw_cms_element_manufacturer_slider %}
+    <div class="sw-cms-el-manufacturer-slider--wrapper">
+        <h2>{{ element.config.heading.value }}</h2>
+        <div class="sw-cms-el-manufacturer-slider">
+            <sw-icon name="default-arrow-head-left" color="#000"></sw-icon>
+            <div class="sw-cms-el-manufacturer-slider--container">
+                <template>
+                    <div class="sw-cms-el-manufacturer-slider--item" v-for="item in element.config.selectedManufacturers.value">
+                        <a :href="item.link" 
+                        :title="item.name" class="manufacturer--link">
+                            <img class="sw-cms-el-manufacturer-slider-img" 
+                                src="" :alt="item.name" /> 
+                        </a>
+                    </div>
+                </template>
+                <br>
+            </div>
+            <sw-icon name="default-arrow-head-right" color="#000"></sw-icon>
+        </div>
+    </div>
+{% endblock %}

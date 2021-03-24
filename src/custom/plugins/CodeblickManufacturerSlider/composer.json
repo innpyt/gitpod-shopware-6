@@ -1,0 +1,25 @@
+{
+  "name": "swag/codeblick-manufacturer-slider",
+  "description": "Adds custom Manufacturer Slider Element in Shopping Experience",
+  "type": "shopware-platform-plugin",
+  "version": "v1.0.0",
+  "authors": [
+        {
+            "name": "Codeblick",
+            "role": "Manufacturer"
+        }
+    ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CodeblickManufacturerSlider\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "CodeblickManufacturerSlider\\CodeblickManufacturerSlider",
+    "label": {
+      "de-DE": "Manufacturer Slider",
+      "en-GB": "Manufacturer Slider"
+    }
+  }
+}
